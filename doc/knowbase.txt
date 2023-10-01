@@ -1,0 +1,7 @@
+================================================================================
+                                                               *knowbase.nvim*
+
+This plugin is a knowledge base. Some sort of obsidian but for neovim. See examples below:
+
+
+ vim:tw=78:ts=8:ft=help:norl:
