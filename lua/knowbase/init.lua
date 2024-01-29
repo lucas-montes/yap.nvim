@@ -51,7 +51,8 @@ M.call_server = function(args)
 end
 
 function _call_core(_, data, extra_args)
-    vim.fn.jobstart({ "/home/lucas/Projects/knowbase/knowbase/build/main", extra_args, "add" },
+    local exec = "/home/lucas/Projects/knowbase/knowbase/debug/release/knowbase"
+    vim.fn.jobstart({ exec, extra_args, "add" },
         {
             stdout_buffered = true,
             on_stdout = _handle_out,
@@ -85,6 +86,7 @@ function _add_dir()
 end
 
 function _add_file(file)
+    print(file)
     _call_core(_, _, file)
 end
 
