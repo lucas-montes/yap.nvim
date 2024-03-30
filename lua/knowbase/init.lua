@@ -51,7 +51,7 @@ M.call_server = function(args)
 end
 
 function _call_core(_, data, extra_args)
-    local exec = "/home/lucas/Projects/knowbase/knowbase/debug/release/knowbase"
+    local exec = "/home/lucas/Projects/knowbase/knowbase-core/debug/release/knowbase"
     vim.fn.jobstart({ exec, extra_args, "add" },
         {
             stdout_buffered = true,
